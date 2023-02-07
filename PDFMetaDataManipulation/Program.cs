@@ -8,9 +8,9 @@ namespace PDFMetaDataManipulation
         static void Main(string[] args)
         {
             // The path to the PDF file
-            string sourceFile = @"D:\Working\HoqueConsulting\PDF-metadata\PDFMetaDataManipulation\PDFMetaDataManipulation\example.pdf";
+            string sourceFile = @"C:\example.pdf";
             // The path to the edited PDF file
-            string outputFile = @"D:\Working\HoqueConsulting\PDF-metadata\PDFMetaDataManipulation\PDFMetaDataManipulation\example_edited.pdf";
+            string outputFile = @"C:\example_edited.pdf";
 
             using (PdfReader reader = new PdfReader(sourceFile))
             {
@@ -22,8 +22,8 @@ namespace PDFMetaDataManipulation
                         PdfDocumentInfo info = pdf.GetDocumentInfo();
 
                         // Update the title and author
-                        info.SetTitle("My New PDF Title");
-                        info.SetAuthor("John Doe");
+                        info.SetTitle("Some new title");
+                        info.SetAuthor("The ROCK");
 
                         pdf.Close();
                     }
