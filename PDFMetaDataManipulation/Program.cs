@@ -8,9 +8,9 @@ namespace PDFMetaDataManipulation
         static void Main(string[] args)
         {
             // The path to the PDF file
-            string sourceFile = @"C:\example.pdf";
+            string sourceFile = @"D:\Working\HoqueConsulting\PDF-metadata\PDFMetaDataManipulation\PDFMetaDataManipulation\example.pdf";
             // The path to the edited PDF file
-            string outputFile = @"C:\example_edited.pdf";
+            string outputFile = @"D:\Working\HoqueConsulting\PDF-metadata\PDFMetaDataManipulation\PDFMetaDataManipulation\example_edited.pdf";
 
             using (PdfReader reader = new PdfReader(sourceFile))
             {
